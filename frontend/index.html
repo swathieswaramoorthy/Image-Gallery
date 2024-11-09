@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="
+       font-family: Papyrus, fantasy;
+    ">Image Gallery</h1>
+    <div class="gallery">
+        <img src="images/animal1.jpg" alt="Image 1" onclick="openModal(0)">
+        <img src="images/animal2.jpg" alt="Image 2" onclick="openModal(1)">
+        <img src="images/animal3.jpg" alt="Image 3" onclick="openModal(2)">
+                
+        <img src="https://cdn.pixabay.com/photo/2023/02/07/19/53/mountains-7774999_1280.jpg" alt="Beautiful scenery" onclick="openModal(3)" >
+        <img src="https://cdn.pixabay.com/photo/2024/09/22/09/39/pantheon-paris-9065570_640.jpg" alt="Beautiful scenery" onclick="openModal(4)" >
+        <img src="https://cdn.pixabay.com/photo/2023/12/15/18/07/bean-8451254_640.jpg" alt="Beautiful scenery" onclick="openModal(5)" >
+        <img src="https://cdn.pixabay.com/photo/2024/04/18/09/44/polar-bear-8703907_640.jpg" alt="Beautiful scenery" onclick="openModal(6)" >
+        <img src="https://cdn.pixabay.com/photo/2024/03/09/06/52/mountains-8622035_640.jpg" alt="Beautiful scenery" onclick="openModal(7)" >
+        <img src="https://cdn.pixabay.com/photo/2023/01/16/22/48/bird-7723465_640.jpg" alt="Beautiful scenery" onclick="openModal(8)" >
+        <img src="https://cdn.pixabay.com/photo/2023/02/07/19/53/mountains-7774999_1280.jpg" alt="Beautiful scenery" onclick="openModal(9)" >
+        <img src="https://cdn.pixabay.com/photo/2022/05/04/11/49/dried-flowers-7173793_640.jpg" alt="Beautiful scenery" onclick="openModal(10)" >
+        <img src="https://cdn.pixabay.com/photo/2024/10/11/19/50/animal-9113761_640.jpg" alt="Beautiful scenery" onclick="openModal(11)" >
+        <img src="https://cdn.pixabay.com/photo/2022/12/16/16/28/flowers-7660120_640.jpg" alt="Beautiful scenery" onclick="openModal(12)" >
+        <img src="https://cdn.pixabay.com/photo/2023/01/14/19/54/christmas-7718958_640.jpg" alt="Beautiful scenery" onclick="openModal(13)" >
+        <img src="https://cdn.pixabay.com/photo/2023/03/14/15/55/baby-7852589_640.jpg" alt="Beautiful scenery" onclick="openModal(14)" >
+        <img src="https://cdn.pixabay.com/photo/2022/12/05/22/08/open-book-7637805_640.jpg" alt="Beautiful scenery" onclick="openModal(15)" >
+        <img src="https://cdn.pixabay.com/photo/2024/05/24/08/52/birds-8784588_640.jpg" alt="Beautiful scenery" onclick="openModal(16)" >
+        <img src="https://cdn.pixabay.com/photo/2024/07/31/12/20/books-8934573_640.jpg" alt="Beautiful scenery" onclick="openModal(17)" >
+        <img src="https://cdn.pixabay.com/photo/2023/10/24/02/49/bike-8337261_640.jpg" alt="Beautiful scenery" onclick="openModal(18)" >
+        <img src="https://cdn.pixabay.com/photo/2023/02/22/19/13/tea-ceremony-7807230_640.jpg" alt="Beautiful scenery" onclick="openModal(19)" >
+        <img src="https://cdn.pixabay.com/photo/2024/05/22/14/54/flowers-8780868_640.jpg" alt="Beautiful scenery" onclick="openModal(20)" >
+
+        <img src="images/places1.jpg" alt="Image 3" onclick="openModal(21)">
+        <img src="images/places2.jpg" alt="Image 3" onclick="openModal(22)">
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Modal for enlarged view -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Large View">
+        <div class="navigation">
+            <button onclick="prevImage()">&#10094;</button>
+            <button onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
