@@ -1,21 +1,116 @@
-body {
+* {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 
+}
+input{
+    display:none;
+
+}
+.container
+{
+    width:100%;
+    text-align:center;
+    
+}
+ 
+ 
+h1{
+    font-weight:normal;
+    font-size:35px;
+    position:relative;
+    margin:40px 0;
+}
+h1::before{
+    content:'';
+    position:absolute;
+    width:100px;
+    height:3px;
+    background-color: crimson;
+    bottom:-10px;
+    left:50%;
+    transform: translate(-50%);
+    animation:animate 4s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        width:100px;
+    }
+    50%
+    {
+        width:200px;
+    }
+    100%
+    {
+        width:100px;
+    }
+}
+.top-content
+{
+    background-color: rgb(236, 226, 226);
+    width:100%;
+    margin :0 auto 20px auto;
+    height:60px;
+    display:flex;
+    align-items:center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px lightgrey;
+}
+h3
+{
+    height:100%;
+    background-color:rgb(92, 84, 84);
+    line-height:60px;
+    padding:0 50px;
+    color:white;
+
+
+}
+label{
+    display:inline-block;
+    height:100%;
+    padding:0 10px;
+    margin:0 50px;
+    line-height:60px;
+    font-size:18px;
+    color:grey;
+    cursor:pointer;
+    transition:.5s;
+
+}
+label:hover{
+    color:black;
+
+}
 h1 {
     text-align: center;
     margin-top: 20px;
 }
 
 .gallery {
-   width: 80%;
+   width: 90%;
    margin:100px auto 50px;
    display:grid;
-   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-template-columns: repeat(4,1fr);
    grid-gap:30px;
+
+
+}
+.pic{
+    position:relative;
+    height:230px;
+    cursor:pointer;
+    
+    /*box-shadow:3px 3px 5px rgb(155, 149, 149);*/
+}
+.pic img
+{
+  width:100%;
+  height:100%;
 
 
 }
@@ -83,4 +178,112 @@ h1 {
 
 .navigation button:last-of-type {
     right: 20px;
+}
+#check1:checked ~ .container .gallery  .pic{
+    opacity:1;
+    transform:scale(1);
+    position:relative;
+    transition: .5s;
+
+}
+#check2:checked ~ .container .gallery  .flower{
+    opacity:1;
+    transform:scale(1);
+    position:relative;
+    
+}
+#check2:checked ~ .container .gallery  .family,
+#check2:checked ~ .container .gallery  .places,
+#check2:checked ~ .container .gallery  .food,
+#check2:checked ~ .container .gallery  .book,
+#check2:checked ~ .container .gallery  .animal
+   {
+    opacity:0;
+    transform:scale(0);
+    position:absolute;
+    
+}
+#check3:checked ~ .container .gallery  .family{
+    opacity:1;
+    transform:scale(1);
+    position:relative;
+    
+}
+#check3:checked ~ .container .gallery  .flower,
+#check3:checked ~ .container .gallery  .places,
+#check3:checked ~ .container .gallery  .food,
+#check3:checked ~ .container .gallery  .book,
+#check3:checked ~ .container .gallery  .animal
+   {
+    opacity:0;
+    transform:scale(0);
+    position:absolute;
+    
+}
+#check4:checked ~ .container .gallery  .places{
+    opacity:1;
+    transform:scale(1);
+    position:relative;
+    
+}
+#check4:checked ~ .container .gallery  .family,
+#check4:checked ~ .container .gallery  .flower,
+#check4:checked ~ .container .gallery  .food,
+#check4:checked ~ .container .gallery  .book,
+#check4:checked ~ .container .gallery  .animal
+   {
+    opacity:0;
+    transform:scale(0);
+    position:absolute;
+    
+}
+#check5:checked ~ .container .gallery  .food{
+    opacity:1;
+    transform:scale(1);
+    position:relative;
+    
+}
+#check5:checked ~ .container .gallery  .family,
+#check5:checked ~ .container .gallery  .places,
+#check5:checked ~ .container .gallery  .flower,
+#check5:checked ~ .container .gallery  .book,
+#check5:checked ~ .container .gallery  .animal
+   {
+    opacity:0;
+    transform:scale(0);
+    position:absolute;
+    
+}#check6:checked ~ .container .gallery  .book{
+    opacity:1;
+    transform:scale(1);
+    position:relative;
+    
+}
+#check6:checked ~ .container .gallery  .family,
+#check6:checked ~ .container .gallery  .places,
+#check6:checked ~ .container .gallery  .food,
+#check6:checked ~ .container .gallery  .flower,
+#check6:checked ~ .container .gallery  .animal
+   {
+    opacity:0;
+    transform:scale(0);
+    position:absolute;
+    
+}
+#check7:checked ~ .container .gallery  .animal{
+    opacity:1;
+    transform:scale(1);
+    position:relative;
+    
+}
+#check7:checked ~ .container .gallery  .family,
+#check7:checked ~ .container .gallery  .places,
+#check7:checked ~ .container .gallery  .food,
+#check7:checked ~ .container .gallery  .book,
+#check7:checked ~ .container .gallery  .flower
+   {
+    opacity:0;
+    transform:scale(0);
+    position:absolute;
+    
 }
