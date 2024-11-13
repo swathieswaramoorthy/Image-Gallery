@@ -16,16 +16,16 @@
     <input type="radio" name="photos " id="check6">
     <input type="radio" name="photos " id="check7">
     <div class="container">
-        <h1 style=" font-family: Papyrus, fantasy; ">Image Gallery</h1>
+        <h1 style=" font-family: cursive ">Image Gallery</h1>
        
-        <div class="search-container" style="background-color: rgb(124, 120, 120); padding: 20px; text-align: center;">
+        <div class="search-container" style="background-color: rgb(245, 233, 233); padding: 20px; text-align: center;">
             <input type="text" id="searchInput" placeholder="Search images..." onkeyup="searchImages()" 
                    style="width: 300px; padding: 10px; font-size: 18px;">
         </div>
           
     <div class="top-content">
         <h3>IMAGE GALLERY</h3>
-        <label for="check1">All Photos </label>
+        <label for="check1">All  </label>
         <label for="check2">Flower  </label>
         <label for="check3">Family </label>
         <label for="check4">Place </label>
@@ -36,53 +36,53 @@
      
 
     <div class="gallery">
-        <div class="pic animal">
+        <div class="pic animal" data-title="animal">
         <img src="images/animal1.jpg" alt="Image1" onclick=" openModal(0)">
     </div>
-    <div class="pic animal">
+    <div class="pic animal" data-title="animal">
         <img src="images/animal2.jpg" alt="Image2" onclick="openModal(1)">
     </div>
-    <div class="pic animal">
+    <div class="pic animal" data-title="animal">
         <img src="images/animal3.jpg" alt="Image3" onclick="openModal(2)">
     </div>
-    <div class="pic places"> 
+    <div class="pic places" data-title="places"> 
         <img src="https://cdn.pixabay.com/photo/2023/02/07/19/53/mountains-7774999_1280.jpg" alt="Beautiful scenery" onclick="openModal(3)" >
-    </div><div class="pic places">
+    </div><div class="pic places" data-title="places">
         <img src="https://cdn.pixabay.com/photo/2024/09/22/09/39/pantheon-paris-9065570_640.jpg" alt="Beautiful scenery" onclick="openModal(4)" >
-    </div><div class="pic food">
+    </div><div class="pic food" data-title="food">
         <img src="https://cdn.pixabay.com/photo/2023/12/15/18/07/bean-8451254_640.jpg" alt="Beautiful scenery" onclick="openModal(5)" >
-    </div><div class="pic animal">
+    </div><div class="pic animal" data-title="animal">
         <img src="https://cdn.pixabay.com/photo/2024/04/18/09/44/polar-bear-8703907_640.jpg" alt="Beautiful scenery" onclick="openModal(6)" >
-    </div><div class="pic places">
+    </div><div class="pic places" data-title="places">
         <img src="https://cdn.pixabay.com/photo/2024/03/09/06/52/mountains-8622035_640.jpg" alt="Beautiful scenery" onclick="openModal(7)" >
-    </div> <div class="pic animal">
+    </div> <div class="pic animal" data-title="animal">
         <img src="https://cdn.pixabay.com/photo/2023/01/16/22/48/bird-7723465_640.jpg" alt="Beautiful scenery" onclick="openModal(8)" >
-    </div> <div class="pic places">
+    </div> <div class="pic places" data-title="places">
         <img src="https://cdn.pixabay.com/photo/2023/02/07/19/53/mountains-7774999_1280.jpg" alt="Beautiful scenery" onclick="openModal(9)" >
-    </div> <div class="pic flower">
+    </div> <div class="pic flower" data-title="flower">
         <img src="https://cdn.pixabay.com/photo/2022/05/04/11/49/dried-flowers-7173793_640.jpg" alt="Beautiful scenery" onclick="openModal(10)" >
-    </div> <div class="pic animal">
+    </div> <div class="pic animal"data-title="animal">
         <img src="https://cdn.pixabay.com/photo/2024/10/11/19/50/animal-9113761_640.jpg" alt="Beautiful scenery" onclick="openModal(11)" >
-    </div>  <div class="pic flower">
+    </div>  <div class="pic flower" data-title="flower">
         <img src="https://cdn.pixabay.com/photo/2022/12/16/16/28/flowers-7660120_640.jpg" alt="Beautiful scenery" onclick="openModal(12)" >
-    </div>  <div class="pic places">
+    </div>  <div class="pic places" data-title="places">
         <img src="https://cdn.pixabay.com/photo/2023/01/14/19/54/christmas-7718958_640.jpg" alt="Beautiful scenery" onclick="openModal(13)" >
-    </div>  <div class="pic family">
+    </div>  <div class="pic family" data-title="family">
         <img src="https://cdn.pixabay.com/photo/2023/03/14/15/55/baby-7852589_640.jpg" alt="Beautiful scenery" onclick="openModal(14)" >
-    </div>  <div class="pic book">
+    </div>  <div class="pic book" data-title="book">
         <img src="https://cdn.pixabay.com/photo/2022/12/05/22/08/open-book-7637805_640.jpg" alt="Beautiful scenery" onclick="openModal(15)" >
-    </div>  <div class="pic animal">
+    </div>  <div class="pic animal"data-title="animal">
         <img src="https://cdn.pixabay.com/photo/2024/05/24/08/52/birds-8784588_640.jpg" alt="Beautiful scenery" onclick="openModal(16)" >
         
-    </div> <div class="pic book">
+    </div> <div class="pic book" data-title="book">
         <img src="https://cdn.pixabay.com/photo/2024/07/31/12/20/books-8934573_640.jpg" alt="Beautiful scenery" onclick="openModal(17)" >
-    </div>  <div class="pic food">
+    </div>  <div class="pic food" data-title="food">
         <img src="https://cdn.pixabay.com/photo/2023/02/22/19/13/tea-ceremony-7807230_640.jpg" alt="Beautiful scenery" onclick="openModal(19)" >
-    </div>  <div class="pic flower">
+    </div>  <div class="pic flower" data-title="flower">
         <img src="https://cdn.pixabay.com/photo/2024/05/22/14/54/flowers-8780868_640.jpg" alt="Beautiful scenery" onclick="openModal(20)" >
-    </div> <div class="pic places">
+    </div> <div class="pic places" data-title="places">
         <img src="images/places1.jpg" alt="Image3" onclick="openModal(21)">
-    </div> <div class="pic places">
+    </div> <div class="pic places" data-title="places">
         <img src="images/places2.jpg" alt="Image4" onclick="openModal(22)">
     </div>
       

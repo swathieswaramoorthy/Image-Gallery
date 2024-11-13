@@ -45,16 +45,19 @@ function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     document.getElementById("modalImage").src = images[currentImageIndex];
 }
-function searchImages() {
-    const input = document.getElementById("searchInput").value.toLowerCase();
-    const images = document.querySelectorAll(".gallery .pic");
 
-    images.forEach(image => {
-        const altText = image.querySelector("img").alt.toLowerCase();
-        if (altText.includes(input)) {
-            image.style.display = "block"; // Show image if it matches search term
+function searchImages() {
+    const filter = document.getElementById("searchInput").value.toLowerCase();
+    const images = document.getElementsByClassName("pic");
+
+    for (let i = 0; i < images.length; i++) {
+        const imgAlt = images[i].getAttribute("alt") || "";
+        const imgTitle = images[i].getAttribute("data-title") || "";
+        
+        if (imgAlt.toLowerCase().includes(filter) || imgTitle.toLowerCase().includes(filter)) {
+            images[i].style.display = "inline-block";
         } else {
-            image.style.display = "none"; // Hide image if it doesn't match
+            images[i].style.display = "none";
         }
-    });
+    }
 }
