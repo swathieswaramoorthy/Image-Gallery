@@ -45,3 +45,16 @@ function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     document.getElementById("modalImage").src = images[currentImageIndex];
 }
+function searchImages() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const images = document.querySelectorAll(".gallery .pic");
+
+    images.forEach(image => {
+        const altText = image.querySelector("img").alt.toLowerCase();
+        if (altText.includes(input)) {
+            image.style.display = "block"; // Show image if it matches search term
+        } else {
+            image.style.display = "none"; // Hide image if it doesn't match
+        }
+    });
+}

@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search images..." onkeyup="searchImages()">
-    </div>
-    
+   
     <input type="radio" name="photos " id="check1" checked>
     <input type="radio" name="photos " id="check2">
     <input type="radio" name="photos " id="check3">
@@ -20,6 +17,12 @@
     <input type="radio" name="photos " id="check7">
     <div class="container">
         <h1 style=" font-family: Papyrus, fantasy; ">Image Gallery</h1>
+       
+        <div class="search-container" style="background-color: rgb(124, 120, 120); padding: 20px; text-align: center;">
+            <input type="text" id="searchInput" placeholder="Search images..." onkeyup="searchImages()" 
+                   style="width: 300px; padding: 10px; font-size: 18px;">
+        </div>
+          
     <div class="top-content">
         <h3>IMAGE GALLERY</h3>
         <label for="check1">All Photos </label>
@@ -27,9 +30,10 @@
         <label for="check3">Family </label>
         <label for="check4">Place </label>
         <label for="check5">Food</label>
-        <label for="check6">Book </label>
+        
         <label for="check7">Animals </label>
     </div>
+     
 
     <div class="gallery">
         <div class="pic animal">
