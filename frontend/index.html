@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search images..." onkeyup="searchImages()">
+    </div>
     
     <input type="radio" name="photos " id="check1" checked>
     <input type="radio" name="photos " id="check2">
@@ -78,10 +81,10 @@
     </div> <div class="pic places">
         <img src="images/places2.jpg" alt="Image4" onclick="openModal(22)">
     </div>
-        <!-- Add more images as needed -->
+      
     </div>
 
-    <!-- Modal for enlarged view -->
+    
     <div id="modal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img id="modalImage" src="" alt="Large View">
