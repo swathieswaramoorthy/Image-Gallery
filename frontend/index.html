@@ -17,14 +17,11 @@
     <input type="radio" name="photos " id="check7">
     <div class="container">
         <h1 style=" font-family: cursive ">Image Gallery</h1>
-       
-        <div class="search-container" style="background-color: rgb(245, 233, 233); padding: 20px; text-align: center;">
-            <input type="text" id="searchInput" placeholder="Search images..." onkeyup="searchImages()" 
-                   style="width: 300px; padding: 10px; font-size: 18px;">
-        </div>
-          
+
+        
+          <br>
     <div class="top-content">
-        <h3>IMAGE GALLERY</h3>
+        <h3>IMAGE</h3>
         <label for="check1">All  </label>
         <label for="check2">Flower  </label>
         <label for="check3">Family </label>
@@ -33,9 +30,21 @@
         
         <label for="check7">Animals </label>
     </div>
-     
+
+        <div class="search-bar">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search images..." 
+        onkeyup="searchImages()"
+    >
+</div>
+
+   
 
     <div class="gallery">
+       
+
         <div class="pic animal" data-title="animal">
         <img src="images/animal1.jpg" alt="Image1" onclick=" openModal(0)">
     </div>

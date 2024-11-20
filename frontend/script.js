@@ -25,6 +25,19 @@ const images = [
     // Add more images as needed
 ];
 let currentImageIndex = 0;
+function searchImages() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const images = document.querySelectorAll(".gallery .pic");
+
+    images.forEach((image) => {
+        const title = image.getAttribute("data-title").toLowerCase();
+        if (title.includes(input)) {
+            image.style.display = "block"; // Show matching images
+        } else {
+            image.style.display = "none"; // Hide non-matching images
+        }
+    });
+}
 
 function openModal(index) {
     currentImageIndex = index;
@@ -46,18 +59,3 @@ function nextImage() {
     document.getElementById("modalImage").src = images[currentImageIndex];
 }
 
-function searchImages() {
-    const filter = document.getElementById("searchInput").value.toLowerCase();
-    const images = document.getElementsByClassName("pic");
-
-    for (let i = 0; i < images.length; i++) {
-        const imgAlt = images[i].getAttribute("alt") || "";
-        const imgTitle = images[i].getAttribute("data-title") || "";
-        
-        if (imgAlt.toLowerCase().includes(filter) || imgTitle.toLowerCase().includes(filter)) {
-            images[i].style.display = "inline-block";
-        } else {
-            images[i].style.display = "none";
-        }
-    }
-}
